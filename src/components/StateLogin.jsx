@@ -16,6 +16,11 @@ export default function Login() {
     // );
 
     console.log(enteredValues);
+
+    setEnteredValues({
+      email: "",
+      password: "",
+    });
   }
 
   // function handleEmailChange(event) {

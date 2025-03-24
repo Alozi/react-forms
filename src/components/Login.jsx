@@ -4,7 +4,7 @@ export default function Login() {
   const email = useRef();
   const password = useRef();
 
-  function handleSubmit() {
+  function handleSubmit(event) {
     event.preventDefault();
     console.log("handleSubmit");
 
@@ -14,6 +14,8 @@ export default function Login() {
     console.log(
       "User email: " + enteredEmail + ", password: " + enteredPassword
     );
+
+    event.target.reset();
   }
 
   return (
